@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+.btn-resa {
+  background-color: #9356DC;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 10%;
+}
+
+#restau {
+  width: 100%;
+  background-color: gray;
+}
+
+.restau-card {
+  width: 50%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
