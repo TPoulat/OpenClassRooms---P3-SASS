@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Le délice des sens</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -10,111 +10,152 @@
 </head>
 
 <body>
-    <header>
-        <i class="fa-solid fa-arrow-left"></i>
-        <img src="images/logo/ohmyfood.png" id="logo" alt="logoOhmyfood">
+    <header class="header-menu">
+        <a href="index.html">
+            <i class="fa-solid fa-arrow-left header__arrow"></i>
+        </a>
+        <img src="images/logo/ohmyfood.png" class="header__logo" alt="logoOhmyfood">
     </header>
 
 
     <main>
-        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Ledelicedessens">
+        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Ledelicedessens"
+            class="menu__prev">
 
-        <section class="menu">
+
+        <div class="menu">
             <div class="menu-heading">
                 <h1>Le délice des sens</h1>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart menu__like"></i>
             </div>
 
-            <h2>ENTRÉES</h2>
-            <div class="menu__card">
-                <h3>Tartare de thon</h3>
-                <p>Assaisonné au yuzu
-                    25€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <div class="menu__card">
-                <h3>Bouchée de homard croustillant</h3>
-                <p>Et sa farandole de petits légumes
-                    35€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
+            <div class="entree">
+                <h2>ENTRÉES</h2>
+                <div class="menu__card">
+                    <h3>Tartare de thon</h3>
+                    <div class="menu__txt">
+                        <p>Assaisonné au yuzu</p>
+                        <p class="menu__price">25€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <h3>Bouchée de homard croustillant</h3>
+                    <div class="menu__txt">
+                        <p>Et sa farandole de petits légumes</p>
+                        <p class="menu__price">35€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
 
-            <div class="menu__card">
-                <h3>Velouté de cèpes</h3>
-                <p>Aux truffes
-                    20€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <h2>PLATS</h2>
-
-            <div class="menu__card">
-                <h3>Poulet rôti aux herbes de Provence</h3>
-                <p>Et sa crème de truffe
-                    40€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <div class="menu__card">
-                <h3>Langouste rôtie</h3>
-                <p>Et ses légumes de saison
-                    35€</p>
-                <i class="fa-solid fa-circle-check"></i>
+                <div class="menu__card">
+                    <h3>Velouté de cèpes</h3>
+                    <div class="menu__txt">
+                        <p>Aux truffes</p>
+                        <p class="menu__price">20€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
             </div>
 
-            <div class="menu__card">
-                <h3>Côte de boeuf Angus</h3>
-                <p>Et sa purée de panais
-                    44€</p>
-                <i class="fa-solid fa-circle-check"></i>
+            <div class="dish">
+                <h2>PLATS</h2>
+                <div class="menu__card">
+                    <h3>Poulet rôti aux herbes de Provence</h3>
+                    <div class="menu__txt">
+                        <p>Et sa crème de truffe</p>
+                        <p class="menu__price">40€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
+
+                <div class="menu__card">
+                    <h3>Langouste rôtie</h3>
+                    <div class="menu__txt">
+                        <p>Et ses légumes de saison</p>
+                        <p class="menu__price">35€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
+
+                <div class="menu__card">
+                    <h3>Côte de boeuf Angus</h3>
+                    <div class="menu__txt">
+                        <p>Et sa purée de panais</p>
+                        <p class="menu__price">44€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
             </div>
 
-            <h2>DESSERTS</h2>
+            <div class="dessert">
+                <h2>DESSERTS</h2>
+                <div class="menu__card">
+                    <h3>Farandole de desserts</h3>
+                    <div class="menu__txt">
+                        <p>Du chef</p>
+                        <p class="menu__price">18€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
 
-            <div class="menu__card">
-                <h3>Farandole de desserts</h3>
-                <p>Du chef
-                    18€</p>
-                <i class="fa-solid fa-circle-check"></i>
+                <div class="menu__card">
+                    <h3>Crème brulée</h3>
+                    <div class="menu__txt">
+                        <p>Revisitée</p>
+                        <p class="menu__price">22€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
+
+                <div class="menu__card">
+                    <h3>Tiramisu</h3>
+                    <div class="menu__txt">
+                        <p>À la noisette</p>
+                        <p class="menu__price">23€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
             </div>
 
-            <div class="menu__card">
-                <h3>Crème brulée</h3>
-                <p>Revisitée
-                    22€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <div class="menu__card">
-                <h3>Tiramisu</h3>
-                <p>À la noisette
-                    23€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <div class="btn-order">
+            <div class="btn__order">
                 <h3>Commander</h3>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <img src="images/logo/ohmyfood.png" id="logo" alt="logoOhmyfood">
-        <article>
-            <i class="fa-solid fa-utensils"></i>
-            <p>Proposé un restaurant</p>
+        <h2>ohmyfood</h2>
+        <article class="propose">
+            <i class="fa-solid fa-utensils footer__logo"></i>
+            <h3>Proposé un restaurant</h3>
         </article>
 
-        <article>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p>Devenir partenaire</p>
+        <article class="become">
+            <i class="fa-solid fa-handshake-angle footer__logo footer__hand"></i>
+            <h3>Devenir partenaire</h3>
         </article>
         <p>Mentions légales</p>
         <p>Contact</p>
     </footer>
-
-
-
 </body>
 
 </html>

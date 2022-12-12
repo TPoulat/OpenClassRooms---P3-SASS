@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-text;
+}
+
+/* H1 et Explorer nos Restaurants  */
+h1 {
+    margin: 20px 0;
+    width: 55%;
+    text-align: center;
+}
+
+#explore {
+    @include flex-center;
+    flex-direction: column;
+    background-color: $color-greylight;
+
+    &>p {
+        width: 80%;
+        text-align: center;
+        font-size: 1.2em;
+        color: grey;
+    }
+}
+
+/* Section Fonctionnement */
+
+h2 {
+    padding: 50px 0 30px 20px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/* Section Restau */
+
+#restau {
+    width: 100%;
+    background-color: $color-greylight;
+}
+
+.restau {
+    &-card {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
+
+    &-card>img {
+        width: 100%;
+        height: 150px;
+        margin: auto;
+        object-fit: cover;
+    }
+
+    &__below {
+        width: 100%;
+        height: 80px;
+        margin: auto;
+        padding: 20px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        margin-bottom: 30px;
+        @include border-bot-rad
+    }
+
+    &__txt {
+        padding-left: 20px;
+    }
+
+    &__txt>p {
+        font-size: 1.3em;
+    }
+
+    &-prev {
+        @include border-top-rad
+    }
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Photos pages menu */
+
+.menu {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: $color-greylight;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: -50px;
+    padding-bottom: 30px;
+
+    &__prev {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    &-heading {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    &-heading>h1 {
+        font-family: $font-title;
+        padding-left: 5%;
+        font-size: 1.4em;
+
+    }
+
+    &__like {
+        margin-left: 25%;
+        font-size: 1.3em;
+    }
+
+    &>h2 {
+        width: 10%;
+        font-size: 1.0em;
+        padding-bottom: 5px;
+        padding-left: 0;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-bottom: 3px $color-tertiary solid;
+    }
+
+    &__card {
+        background-color: $color-text;
+        width: 90%;
+        height: 60px;
+        margin: 0 auto 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        border-radius: $border-rad;
+        box-shadow: 0px 0px 5px gray;
+    }
+
+    &__card>h3 {
+        font-size: 1.0em;
+    }
+
+    &__txt {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__price {
+        display: flex;
+        margin-right: 5%;
+    }
+
+    &__save {
+        display: none;
+    }
+}
+
+/*Animation Menu */
+
+/* Apparition Menu */
+
+.entree {
+    -moz-animation: fadein 3s;
+    /* Firefox */
+    -webkit-animation: fadein 3s;
+    /* Safari et Chrome */
+    animation: fadein 3s 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        margin-top: 30px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+
+.dish {
+    -moz-animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        margin-top: 30px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.dessert {
+    -moz-animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s 6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        margin-top: 30px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}

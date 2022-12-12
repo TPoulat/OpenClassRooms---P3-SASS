@@ -1,0 +1,58 @@
+@mixin for-tablet {
+    @media ($media-queries: ($tablet)) {
+        @content ;
+    }
+}
+
+@mixin for-desktop {
+    @media ($media-queries: ($desktop)) {
+        @content ;
+    }
+}
+
+@mixin border-bot-rad {
+    border-bottom-left-radius: $border-rad;
+    border-bottom-right-radius: $border-rad;
+}
+
+@mixin border-top-rad {
+    border-top-left-radius: $border-rad;
+    border-top-right-radius: $border-rad;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn-primary {
+    background: $color-btn-primary;
+    color: $color-text;
+    width: 200px;
+    height: 50px;
+    border-radius: $border-rad;
+    box-shadow: 0px 0px 5px gray;
+}
+
+
+@mixin btn-hover {
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px gray;
+}
+
+/*
+@mixin hidden {
+    animation: fadeIn 3s both;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+*/

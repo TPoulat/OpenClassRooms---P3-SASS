@@ -1,35 +1,478 @@
+/* $media-queries: (
+    'tablet'  : "only screen (min-width: 768px) and (max-width: 991px)",
+    'desktop' : "only screen (min-width: 991px)",
+)*/
+/*
+@mixin hidden {
+    animation: fadeIn 3s both;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-.btn-resa {
-  background-color: #9356DC;
+.btn {
+  /*transition: all 0.3s linear 0s;
+      background-color: #33BEE5;
+      width: 100%;
+      height: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+  }*/
+}
+.btn__resa {
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   width: 200px;
   height: 50px;
   border-radius: 20px;
+  box-shadow: 0px 0px 5px gray;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  /*z-index: 1; */
+}
+.btn__resa:hover {
+  opacity: 0.8;
+  box-shadow: 0px 0px 10px gray;
+}
+.btn__choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 70px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px gray;
+  background-color: rgb(233, 232, 232);
+  font-weight: bold;
+}
+.btn__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 7%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+}
+.btn__logo {
+  position: absolute;
+  left: 20%;
+}
+.btn__choose:hover {
+  background-color: #e4d5f6;
+}
+.btn__choose:hover .btn__logo {
+  color: #9356DC;
+}
+.btn__like {
+  font-size: 1.5em;
+  padding-top: 10px;
+  padding-right: 30px;
+}
+.btn__like:hover {
+  display: none;
+}
+.btn__likefull {
+  display: none;
+}
+.btn__likefull:hover {
+  animation: color 1s both;
+  display: contents;
+  transform: scale(1);
+  opacity: 1;
+  animation: color 1s;
+}
+.btn__likefull:hover > i {
+  background-color: linear-gradient(#FF79DA, #9356DC);
+}
+@keyframes color {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.btn__order {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 30px auto 0px;
+}
+.btn__order:hover {
+  opacity: 0.8;
+  box-shadow: 0px 0px 10px gray;
+}
+.btn__order > h3 {
+  margin-bottom: 0;
 }
 
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.loader-logo {
+  font-size: 4em;
+  color: #99E2D0;
+  animation: loader 3s both;
+}
+
+@keyframes loader {
+  30% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  80% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.header,
+.main,
+.footer {
+  animation: hidden 4s both;
+}
+
+@keyframes hidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+.header {
+    @include hidden
+}
+
+.main {
+    @include hidden
+}
+
+.footer {
+    @include hidden
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* H1 et Explorer nos Restaurants  */
+h1 {
+  margin: 20px 0;
+  width: 55%;
+  text-align: center;
+}
+
+#explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(233, 232, 232);
+}
+#explore > p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.2em;
+  color: grey;
+}
+
+/* Section Fonctionnement */
+h2 {
+  padding: 50px 0 30px 20px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* Section Restau */
+#restau {
+  width: 100%;
+  background-color: rgb(233, 232, 232);
+}
+
+.restau-card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.restau-card > img {
+  width: 100%;
+  height: 150px;
+  margin: auto;
+  object-fit: cover;
+}
+.restau__below {
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.restau__txt {
+  padding-left: 20px;
+}
+.restau__txt > p {
+  font-size: 1.3em;
+}
+.restau-prev {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Photos pages menu */
+.menu {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: rgb(233, 232, 232);
+  position: relative;
+  bottom: 50px;
+  margin-bottom: -50px;
+  padding-bottom: 30px;
+}
+.menu__prev {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.menu-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+}
+.menu-heading > h1 {
+  font-family: "Shrikhand", cursive;
+  padding-left: 5%;
+  font-size: 1.4em;
+}
+.menu__like {
+  margin-left: 25%;
+  font-size: 1.3em;
+}
+.menu > h2 {
+  width: 10%;
+  font-size: 1em;
+  padding-bottom: 5px;
+  padding-left: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-bottom: 3px #99E2D0 solid;
+}
+.menu__card {
+  background-color: white;
+  width: 90%;
+  height: 60px;
+  margin: 0 auto 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px gray;
+}
+.menu__card > h3 {
+  font-size: 1em;
+}
+.menu__txt {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__price {
+  display: flex;
+  margin-right: 5%;
+}
+.menu__save {
+  display: none;
+}
+
+/*Animation Menu */
+/* Apparition Menu */
+.entree {
+  -moz-animation: fadein 3s;
+  /* Firefox */
+  -webkit-animation: fadein 3s;
+  /* Safari et Chrome */
+  animation: fadein 3s 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    margin-top: 30px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+.dish {
+  -moz-animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    margin-top: 30px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+.dessert {
+  -moz-animation: fadein 3s;
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s 6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    margin-top: 30px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d9d9d9;
+  box-shadow: 0px -2px 1px #888;
+}
+
+#recherche {
+  text-align: center;
+  border: none;
+  background: #d9d9d9;
+  width: 100%;
+  height: 50px;
+  font-size: 1.1em;
+}
+
+/* Header Index */
 header {
   display: flex;
   justify-content: center;
 }
 
 #logo {
-  width: 10%;
+  width: 40%;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-#restau {
-  width: 100%;
-  background-color: gray;
+/* Pages Menu Header */
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__arrow {
+  padding-left: 20px;
+}
+.header__logo {
+  width: 40%;
+  margin: 20px auto 10px;
 }
 
-.restau-card {
-  width: 50%;
+footer {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+footer > h2 {
+  font-family: "Shrikhand", cursive;
+  padding: 30px 0 20px 0px;
+  font-size: 1.3em;
+}
+footer > p {
+  padding-bottom: 10px;
 }
 
-a {
-  color: black;
-  text-decoration: none;
+.footer__logo {
+  margin-right: 10px;
+}
+.footer__hand {
+  font-size: 0.7em;
+}
+
+.propose {
+  display: flex;
+}
+.propose > h3 {
+  font-size: 1em;
+}
+
+.become {
+  display: flex;
+}
+.become > h3 {
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>À la française</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -10,111 +10,150 @@
 </head>
 
 <body>
-    <header>
-        <i class="fa-solid fa-arrow-left"></i>
-        <img src="images/logo/ohmyfood.png" id="logo" alt="logoOhmyfood">
+    <header class="header-menu">
+        <a href="index.html">
+            <i class="fa-solid fa-arrow-left header__arrow"></i>
+        </a>
+        <img src="images/logo/ohmyfood.png" class="header__logo" alt="logoOhmyfood">
     </header>
 
 
     <main>
-        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Alafrançaise">
+        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Alafrançaise" class="menu__prev">
 
-        <section class="menu">
+        <div class="menu">
             <div class="menu-heading">
                 <h1>À la française</h1>
                 <i class="fa-regular fa-heart"></i>
             </div>
 
-            <h2>ENTRÉES</h2>
-            <div class="menu__card">
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zestes d'orange
-                    25€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <div class="menu__card">
-                <h3>Velouté de légumes d'antan</h3>
-                <p>Carotte, panais, topinambour
-                    35€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
+            <div class="entree">
+                <h2>ENTRÉES</h2>
+                <div class="menu__card">
+                    <h3>Tartare de poulpe acidulé</h3>
+                    <div class="menu__txt">
+                        <p>Aux zestes d'orange</p>
+                        <p class="menu__price">25€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <h3>Velouté de légumes d'antan</h3>
+                    <div class="menu__txt">
+                        <p>Carotte, panais, topinambour</p>
+                        <p class="menu__price">35€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
 
-            <div class="menu__card">
-                <h3>Soupe à l'oignon</h3>
-                <p>Revisitée
-                    20€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <h2>PLATS</h2>
-
-            <div class="menu__card">
-                <h3>Coquilles Saint-Jacques</h3>
-                <p>Accompagnées d'une purée de panais
-                    40€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <div class="menu__card">
-                <h3>Magret de canard</h3>
-                <p>Et parmentier de pommes de terre
-                    35€</p>
-                <i class="fa-solid fa-circle-check"></i>
+                <div class="menu__card">
+                    <h3>Soupe à l'oignon</h3>
+                    <div class="menu__txt">
+                        <p>Revisitée</p>
+                        <p class="menu__price">20€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
             </div>
 
-            <div class="menu__card">
-                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                <p>Sur son lit de gnocchis aux légumes
-                    44€</p>
-                <i class="fa-solid fa-circle-check"></i>
+            <div class="dish">
+                <h2>PLATS</h2>
+                <div class="menu__card">
+                    <h3>Coquilles Saint-Jacques</h3>
+                    <div class="menu__txt">
+                        <p>Accompagnées d'une purée de panais</p>
+                        <p class="menu__price">40€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
+
+                <div class="menu__card">
+                    <h3>Magret de canard</h3>
+                    <div class="menu__txt">
+                        <p>Et parmentier de pommes de terre</p>
+                        <p class="menu__price">35€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
+
+                <div class="menu__card">
+                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                    <div class="menu__txt">
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                        <p class="menu__price">44€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
             </div>
 
-            <h2>DESSERTS</h2>
+            <div class="dessert">
+                <h2>DESSERTS</h2>
+                <div class="menu__card">
+                    <h3>Pétales de violettes glacés</h3>
+                    <div class="menu__txt">
+                        <p>Et purée de noisettes</p>
+                        <p class="menu__price">18€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
 
-            <div class="menu__card">
-                <h3>Pétales de violettes glacés</h3>
-                <p>Et purée de noisettes
-                    18€</p>
-                <i class="fa-solid fa-circle-check"></i>
+                <div class="menu__card">
+                    <h3>Fondant au chocolat</h3>
+                    <div class="menu__txt">
+                        <p>Revisité</p>
+                        <p class="menu__price">22€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
+
+                <div class="menu__card">
+                    <h3>Millefeuille croustillant</h3>
+                    <div class="menu__txt">
+                        <p>Myrtilles et pâte d’amande</p>
+                        <p class="menu__price">23€</p>
+                    </div>
+                    <div class="menu__save">
+                        <i class="fa-solid fa-circle-check "></i>
+                    </div>
+                </div>
             </div>
 
-            <div class="menu__card">
-                <h3>Fondant au chocolat</h3>
-                <p>Revisité
-                    22€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <div class="menu__card">
-                <h3>Millefeuille croustillant</h3>
-                <p>Myrtilles et pâte d’amande
-                    23€</p>
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-
-            <div class="btn-order">
+            <div class="btn__order">
                 <h3>Commander</h3>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <img src="images/logo/ohmyfood.png" id="logo" alt="logoOhmyfood">
-        <article>
-            <i class="fa-solid fa-utensils"></i>
-            <p>Proposé un restaurant</p>
+        <h2>ohmyfood</h2>
+        <article class="propose">
+            <i class="fa-solid fa-utensils footer__logo"></i>
+            <h3>Proposé un restaurant</h3>
         </article>
 
-        <article>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p>Devenir partenaire</p>
+        <article class="become">
+            <i class="fa-solid fa-handshake-angle footer__logo footer__hand"></i>
+            <h3>Devenir partenaire</h3>
         </article>
         <p>Mentions légales</p>
         <p>Contact</p>
     </footer>
-
-
-
 </body>
 
 </html>
