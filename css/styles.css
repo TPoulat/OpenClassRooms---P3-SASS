@@ -2,21 +2,6 @@
     'tablet'  : "only screen (min-width: 768px) and (max-width: 991px)",
     'desktop' : "only screen (min-width: 991px)",
 )*/
-/*
-@mixin hidden {
-    animation: fadeIn 3s both;
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-}
-*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 .btn {
   /*transition: all 0.3s linear 0s;
@@ -162,9 +147,9 @@
     opacity: 0;
   }
 }
-.header,
-.main,
-.footer {
+header,
+main,
+footer {
   animation: hidden 4s both;
 }
 
@@ -172,23 +157,13 @@
   0% {
     opacity: 0;
   }
+  90% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
 }
-/*
-.header {
-    @include hidden
-}
-
-.main {
-    @include hidden
-}
-
-.footer {
-    @include hidden
-}
-*/
 * {
   margin: 0;
   padding: 0;
