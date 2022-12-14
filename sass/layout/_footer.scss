@@ -1,42 +1,49 @@
-footer{
-    background-color: rgb(58, 58, 58);
+footer {
+    background: lighten($color: $color-black, $amount: 20%);
     color: $color-text;
     padding-left: 30px;
     padding-bottom: 30px;
 
-    &> h2{
-        font-family:$font-title;
+    &>h2 {
+        font-family: $font-title;
         padding: 30px 0 20px 0px;
-        font-size: 1.3em;
-    } 
-
-    &> p{
-        padding-bottom: 10px;        
-    }  
-}
-
-.footer{
-    &__logo{
-    margin-right: 10px;
+        font-size: 1.2em;
     }
 
-    &__hand{
+    &>p {
+        padding-bottom: 10px;
+    }
+
+    &>a {
+        font-size: 1.0em;
+        color: $color-text;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+.footer {
+    &__logo {
+        margin-right: 10px;
+    }
+
+    &__hand {
         font-size: 0.7em;
     }
 }
 
-.propose{
-    display: flex;   
-    
-    & > h3{
-        font-size: 1.0em;      
+.propose {
+    display: flex;
+
+    &>h3 {
+        font-size: 1.0em;
     }
 }
 
-.become{
+.become {
     display: flex;
 
-    & > h3{
+    &>h3 {
         font-size: 1.0em;
     }
 }
