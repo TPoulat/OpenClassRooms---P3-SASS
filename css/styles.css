@@ -131,6 +131,28 @@
   margin-bottom: 0;
 }
 
+/* Media queries */
+/* Additionnelle*/
+@media all and (max-width: 340px) {
+  .btn__logo {
+    left: 17%;
+  }
+  .btn__number {
+    left: 6%;
+  }
+}
+/* Tablette */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .btn__number {
+    left: 8%;
+  }
+}
+/* Desktop*/
+@media all and (min-width: 992px) {
+  .btn__number {
+    left: 8.7%;
+  }
+}
 .loader {
   position: fixed;
   width: 100%;
@@ -163,6 +185,12 @@
     opacity: 0;
   }
 }
+.header,
+.main,
+.footer {
+  animation: hidden 4s both;
+}
+
 @keyframes hidden {
   0% {
     opacity: 0;
