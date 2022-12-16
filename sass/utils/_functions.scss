@@ -1,0 +1,37 @@
+.search {
+    background: lighten($color: $color-grey, $amount: 35%);
+}
+
+#recherche {
+    background: lighten($color: $color-grey, $amount: 35%);
+}
+
+#explore {
+    background: lighten($color: $color-grey, $amount: 45%);
+}
+
+.new {
+    color: darken($color: $color-tertiary, $amount: 35%);
+}
+
+#restau {
+    background: lighten($color: $color-grey, $amount: 47%);
+}
+
+.menu {
+    background: lighten($color: $color-grey, $amount: 35%);
+}
+
+.btn {
+    &__choose {
+        background: lighten($color: $color-grey, $amount: 45%);
+    }
+
+    &__choose:hover {
+        background-color: lighten($color: #9356DC, $amount: 30%);
+    }
+}
+
+footer {
+    background: lighten($color: $color-black, $amount: 20%);
+}

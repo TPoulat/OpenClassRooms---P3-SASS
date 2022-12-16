@@ -14,7 +14,6 @@ h1 {
 #explore {
     @include flex-center;
     flex-direction: column;
-    background: lighten($color: $color-grey, $amount: 45%);
 
     &>p {
         width: 80%;
@@ -25,7 +24,6 @@ h1 {
 }
 
 /* Section Fonctionnement */
-
 h2 {
     padding: 50px 0 30px 20px;
     font-size: 1.6em;
@@ -33,10 +31,8 @@ h2 {
 }
 
 /* Section Restau */
-
 .new {
     background-color: $color-tertiary;
-    color: darken($color: $color-tertiary, $amount: 35%);
     font-weight: bold;
     width: 90px;
     height: 35px;
@@ -52,7 +48,6 @@ h2 {
 
 #restau {
     width: 100%;
-    background: lighten($color: $color-grey, $amount: 47%);
 }
 
 .restau {
@@ -106,13 +101,10 @@ a {
     text-decoration: none;
 }
 
-
 /* Photos pages menu */
-
 .menu {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    background: lighten($color: $color-grey, $amount: 35%);
     position: relative;
     bottom: 50px;
     margin-bottom: -50px;
@@ -217,74 +209,72 @@ a {
 }
 
 /*Animation Menu */
-
 /* Apparition Menu */
 
-// @keyframes fadein {
-//     from {
-//         opacity: 0;
-//         transform: translateY(50px)
-//     }
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(50px)
+    }
 
-//     to {
-//         opacity: 1;
-//         transform: translateY(0)
-//     }
-// }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
 
-// .entree,
-// .entree1 {
-//     @include animation-menu;
-//     animation-delay: 500ms;
-// }
+.entree,
+.entree1 {
+    @include animation-menu;
+    animation-delay: 500ms;
+}
 
-// .entree2 {
-//     @include animation-menu;
-//     animation-delay: 1000ms;
-// }
+.entree2 {
+    @include animation-menu;
+    animation-delay: 1000ms;
+}
 
-// .entree3 {
-//     @include animation-menu;
-//     animation-delay: 1500ms;
-// }
+.entree3 {
+    @include animation-menu;
+    animation-delay: 1500ms;
+}
 
-// .entree4 {
-//     @include animation-menu;
-//     animation-delay: 2000ms;
-// }
+.entree4 {
+    @include animation-menu;
+    animation-delay: 2000ms;
+}
 
-// .dish,
-// .dish1 {
-//     @include animation-menu;
-//     animation-delay: 3000ms;
-// }
+.dish,
+.dish1 {
+    @include animation-menu;
+    animation-delay: 3000ms;
+}
 
-// .dish2 {
-//     @include animation-menu;
-//     animation-delay: 3500ms;
-// }
+.dish2 {
+    @include animation-menu;
+    animation-delay: 3500ms;
+}
 
-// .dish3 {
-//     @include animation-menu;
-//     animation-delay: 4000ms;
-// }
+.dish3 {
+    @include animation-menu;
+    animation-delay: 4000ms;
+}
 
-// .dessert,
-// .dessert1 {
-//     @include animation-menu;
-//     animation-delay: 5500ms;
-// }
+.dessert,
+.dessert1 {
+    @include animation-menu;
+    animation-delay: 5500ms;
+}
 
-// .dessert2 {
-//     @include animation-menu;
-//     animation-delay: 6000ms;
-// }
+.dessert2 {
+    @include animation-menu;
+    animation-delay: 6000ms;
+}
 
-// .dessert3 {
-//     @include animation-menu;
-//     animation-delay: 6500ms;
-// }
-
+.dessert3 {
+    @include animation-menu;
+    animation-delay: 6500ms;
+}
 
 /* Apparation coche des plats */
 .menu {
@@ -315,7 +305,6 @@ a {
 }
 
 /* Media queries */
-
 /* Tablette */
 @media all and (min-width: 768px) and (max-width: 991px) {
 
@@ -343,7 +332,6 @@ a {
 }
 
 /* Desktop*/
-
 @media all and (min-width: 992px) {
     @keyframes animation-price {
         0% {
