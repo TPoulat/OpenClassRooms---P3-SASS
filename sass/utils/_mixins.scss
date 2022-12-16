@@ -40,3 +40,13 @@
     opacity: 0.8;
     box-shadow: 10px 10px 20px gray;
 }
+
+@mixin animation-menu {
+    /* Firefox */
+    -moz-animation: fadein 3s;
+    /* Safari et Chrome */
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}

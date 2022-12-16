@@ -219,70 +219,79 @@ a {
 
 /* Apparition Menu */
 
-// .entree {
-//     /* Firefox */
-//     -moz-animation: fadein 3s;
-//     /* Safari et Chrome */
-//     -webkit-animation: fadein 3s;
-//     animation: fadein 3s 1s;
-//     opacity: 0;
-//     animation-fill-mode: forwards;
-// }
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(50px)
+    }
 
-// @keyframes fadein {
-//     from {
-//         opacity: 0;
-//         margin-top: 30px;
-//     }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
 
-//     to {
-//         opacity: 1;
-//         margin-top: 0;
-//     }
-// }
+.entree,
+.entree1 {
+    @include animation-menu;
+    animation-delay: 500ms;
+}
+
+.entree2 {
+    @include animation-menu;
+    animation-delay: 1000ms;
+}
+
+.entree3 {
+    @include animation-menu;
+    animation-delay: 1500ms;
+}
+
+.dish,
+.dish1 {
+    @include animation-menu;
+    animation-delay: 2000ms;
+}
+
+.dish2 {
+    @include animation-menu;
+    animation-delay: 2500ms;
+}
+
+.dish3 {
+    @include animation-menu;
+    animation-delay: 3000ms;
+}
+
+.dessert,
+.dessert1 {
+    @include animation-menu;
+    animation-delay: 3500ms;
+}
+
+.dessert2 {
+    @include animation-menu;
+    animation-delay: 4000ms;
+}
+
+.dessert3 {
+    @include animation-menu;
+    animation-delay: 4500ms;
+}
 
 
-// .dish {
-//     -moz-animation: fadein 3s;
-//     -webkit-animation: fadein 3s;
-//     animation: fadein 3s 3s;
-//     opacity: 0;
-//     animation-fill-mode: forwards;
-// }
-
-// @keyframes fadein {
-//     from {
-//         opacity: 0;
-//         margin-top: 30px;
-//     }
-
-//     to {
-//         opacity: 1;
-//         margin-top: 0;
-//     }
-// }
-
-// .dessert {
-//     -moz-animation: fadein 3s;
-//     -webkit-animation: fadein 3s;
-//     animation: fadein 3s 6s;
-//     opacity: 0;
-//     animation-fill-mode: forwards;
-// }
-
-// @keyframes fadein {
-//     from {
-//         opacity: 0;
-//         margin-top: 30px;
-//     }
-
-//     to {
-//         opacity: 1;
-//         margin-top: 0;
-//     }
-// }
 
 /* Apparation coche des plats */
+@keyframes animation-price {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-60px);
+    }
+}
+
 .menu {
     &__card:hover {
         cursor: pointer;
@@ -305,16 +314,6 @@ a {
             overflow: hidden;
             width: 250px;
             font-size: 1.1em;
-        }
-    }
-
-    @keyframes animation-price {
-        0% {
-            transform: translateX(0%);
-        }
-
-        100% {
-            transform: translateX(-60px);
         }
     }
 }
