@@ -106,6 +106,7 @@ a {
     text-decoration: none;
 }
 
+
 /* Photos pages menu */
 
 .menu {
@@ -134,22 +135,15 @@ a {
         font-family: $font-title;
         padding-left: 5%;
         font-size: 1.4em;
+    }
 
+    &-heading>.title {
+        padding-left: 3%;
     }
 
     &__like {
         margin-left: 25%;
         font-size: 1.3em;
-    }
-
-    &>h2 {
-        width: 10%;
-        font-size: 1.0em;
-        padding-bottom: 5px;
-        padding-left: 0;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        border-bottom: 3px $color-tertiary solid;
     }
 
     &__card {
@@ -209,15 +203,27 @@ a {
     }
 }
 
+.entree>h2,
+.dish>h2,
+.dessert>h2 {
+    width: 10%;
+    font-size: 1.0em;
+    padding-bottom: 5px;
+    padding-left: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px $color-tertiary solid;
+}
+
 /*Animation Menu */
 
 /* Apparition Menu */
 
 // .entree {
-//     -moz-animation: fadein 3s;
 //     /* Firefox */
-//     -webkit-animation: fadein 3s;
+//     -moz-animation: fadein 3s;
 //     /* Safari et Chrome */
+//     -webkit-animation: fadein 3s;
 //     animation: fadein 3s 1s;
 //     opacity: 0;
 //     animation-fill-mode: forwards;
@@ -276,7 +282,7 @@ a {
 //     }
 // }
 
-/* Apparation coche des plats  */
+/* Apparation coche des plats */
 .menu {
     &__card:hover {
         cursor: pointer;
@@ -291,6 +297,14 @@ a {
 
         .menu__save>i {
             transform: rotate(360deg);
+        }
+
+        .menu__txt>p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 250px;
+            font-size: 1.1em;
         }
     }
 
