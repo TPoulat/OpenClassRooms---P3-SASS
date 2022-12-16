@@ -365,7 +365,7 @@ a {
 .entree > h2,
 .dish > h2,
 .dessert > h2 {
-  width: 10%;
+  width: 45px;
   font-size: 1em;
   padding-bottom: 5px;
   padding-left: 0;
@@ -389,10 +389,10 @@ a {
 .entree,
 .entree1 {
   /* Firefox */
-  -moz-animation: fadein 3s;
+  -moz-animation: fadein 1s;
   /* Safari et Chrome */
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 500ms;
@@ -400,10 +400,10 @@ a {
 
 .entree2 {
   /* Firefox */
-  -moz-animation: fadein 3s;
+  -moz-animation: fadein 1s;
   /* Safari et Chrome */
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 1000ms;
@@ -411,81 +411,92 @@ a {
 
 .entree3 {
   /* Firefox */
-  -moz-animation: fadein 3s;
+  -moz-animation: fadein 1s;
   /* Safari et Chrome */
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 1500ms;
 }
 
-.dish,
-.dish1 {
+.entree4 {
   /* Firefox */
-  -moz-animation: fadein 3s;
+  -moz-animation: fadein 1s;
   /* Safari et Chrome */
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 2000ms;
 }
 
-.dish2 {
+.dish,
+.dish1 {
   /* Firefox */
-  -moz-animation: fadein 3s;
+  -moz-animation: fadein 1s;
   /* Safari et Chrome */
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 2500ms;
-}
-
-.dish3 {
-  /* Firefox */
-  -moz-animation: fadein 3s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 3000ms;
 }
 
-.dessert,
-.dessert1 {
+.dish2 {
   /* Firefox */
-  -moz-animation: fadein 3s;
+  -moz-animation: fadein 1s;
   /* Safari et Chrome */
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 3500ms;
 }
 
-.dessert2 {
+.dish3 {
   /* Firefox */
-  -moz-animation: fadein 3s;
+  -moz-animation: fadein 1s;
   /* Safari et Chrome */
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-delay: 4000ms;
 }
 
-.dessert3 {
+.dessert,
+.dessert1 {
   /* Firefox */
-  -moz-animation: fadein 3s;
+  -moz-animation: fadein 1s;
   /* Safari et Chrome */
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
-  animation-delay: 4500ms;
+  animation-delay: 5500ms;
+}
+
+.dessert2 {
+  /* Firefox */
+  -moz-animation: fadein 1s;
+  /* Safari et Chrome */
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 6000ms;
+}
+
+.dessert3 {
+  /* Firefox */
+  -moz-animation: fadein 1s;
+  /* Safari et Chrome */
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 6500ms;
 }
 
 /* Apparation coche des plats */
@@ -517,6 +528,41 @@ a {
   font-size: 1.1em;
 }
 
+/* Media queries */
+/* Tablette */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  @keyframes animation-price {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-90px);
+    }
+  }
+  .menu-heading > h1 {
+    font-size: 2em;
+  }
+  .menu__card:hover .menu__price {
+    animation: animation-price 500ms linear both;
+  }
+}
+/* Desktop*/
+@media all and (min-width: 992px) {
+  @keyframes animation-price {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-160px);
+    }
+  }
+  .menu-heading > h1 {
+    font-size: 3.5em;
+  }
+  .menu__card:hover .menu__price {
+    animation: animation-price 500ms linear both;
+  }
+}
 .search {
   display: flex;
   justify-content: center;

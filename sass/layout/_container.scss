@@ -206,7 +206,7 @@ a {
 .entree>h2,
 .dish>h2,
 .dessert>h2 {
-    width: 10%;
+    width: 45px;
     font-size: 1.0em;
     padding-bottom: 5px;
     padding-left: 0;
@@ -247,36 +247,41 @@ a {
     animation-delay: 1500ms;
 }
 
-.dish,
-.dish1 {
+.entree4 {
     @include animation-menu;
     animation-delay: 2000ms;
 }
 
+.dish,
+.dish1 {
+    @include animation-menu;
+    animation-delay: 3000ms;
+}
+
 .dish2 {
     @include animation-menu;
-    animation-delay: 2500ms;
+    animation-delay: 3500ms;
 }
 
 .dish3 {
     @include animation-menu;
-    animation-delay: 3000ms;
+    animation-delay: 4000ms;
 }
 
 .dessert,
 .dessert1 {
     @include animation-menu;
-    animation-delay: 3500ms;
+    animation-delay: 5500ms;
 }
 
 .dessert2 {
     @include animation-menu;
-    animation-delay: 4000ms;
+    animation-delay: 6000ms;
 }
 
 .dessert3 {
     @include animation-menu;
-    animation-delay: 4500ms;
+    animation-delay: 6500ms;
 }
 
 
@@ -293,6 +298,7 @@ a {
 }
 
 .menu {
+
     &__card:hover {
         cursor: pointer;
 
@@ -314,6 +320,60 @@ a {
             overflow: hidden;
             width: 250px;
             font-size: 1.1em;
+        }
+    }
+}
+
+/* Media queries */
+
+/* Tablette */
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+    @keyframes animation-price {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-90px);
+        }
+    }
+
+    .menu {
+        &-heading>h1 {
+            font-size: 2.0em;
+        }
+
+        &__card:hover {
+            .menu__price {
+                animation: animation-price 500ms linear both;
+            }
+        }
+    }
+}
+
+/* Desktop*/
+
+@media all and (min-width: 992px) {
+    @keyframes animation-price {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-160px);
+        }
+    }
+
+    .menu {
+        &-heading>h1 {
+            font-size: 3.5em;
+        }
+
+        &__card:hover {
+            .menu__price {
+                animation: animation-price 500ms linear both;
+            }
         }
     }
 }
