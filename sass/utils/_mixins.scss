@@ -1,15 +1,3 @@
-@mixin for-tablet {
-    @media ($media-queries: ($tablet)) {
-        @content ;
-    }
-}
-
-@mixin for-desktop {
-    @media ($media-queries: ($desktop)) {
-        @content ;
-    }
-}
-
 @mixin border-bot-rad {
     border-bottom-left-radius: $border-rad;
     border-bottom-right-radius: $border-rad;

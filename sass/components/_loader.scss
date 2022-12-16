@@ -13,11 +13,9 @@
 }
 
 @keyframes loader {
-
     30% {
         transform: rotate(0deg);
         animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
-
     }
 
     80% {
@@ -32,9 +30,7 @@
     100% {
         opacity: 0;
     }
-
 }
-
 
 .header,
 .main,
@@ -55,5 +51,4 @@
     100% {
         opacity: 1;
     }
-
 }

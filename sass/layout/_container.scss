@@ -180,6 +180,7 @@ a {
 
     &__price {
         margin-right: 5%;
+        transition: transform 500ms linear;
     }
 
     &__save {
@@ -219,91 +220,80 @@ a {
 
 /* Apparition Menu */
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-        transform: translateY(50px)
-    }
+// @keyframes fadein {
+//     from {
+//         opacity: 0;
+//         transform: translateY(50px)
+//     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0)
-    }
-}
+//     to {
+//         opacity: 1;
+//         transform: translateY(0)
+//     }
+// }
 
-.entree,
-.entree1 {
-    @include animation-menu;
-    animation-delay: 500ms;
-}
+// .entree,
+// .entree1 {
+//     @include animation-menu;
+//     animation-delay: 500ms;
+// }
 
-.entree2 {
-    @include animation-menu;
-    animation-delay: 1000ms;
-}
+// .entree2 {
+//     @include animation-menu;
+//     animation-delay: 1000ms;
+// }
 
-.entree3 {
-    @include animation-menu;
-    animation-delay: 1500ms;
-}
+// .entree3 {
+//     @include animation-menu;
+//     animation-delay: 1500ms;
+// }
 
-.entree4 {
-    @include animation-menu;
-    animation-delay: 2000ms;
-}
+// .entree4 {
+//     @include animation-menu;
+//     animation-delay: 2000ms;
+// }
 
-.dish,
-.dish1 {
-    @include animation-menu;
-    animation-delay: 3000ms;
-}
+// .dish,
+// .dish1 {
+//     @include animation-menu;
+//     animation-delay: 3000ms;
+// }
 
-.dish2 {
-    @include animation-menu;
-    animation-delay: 3500ms;
-}
+// .dish2 {
+//     @include animation-menu;
+//     animation-delay: 3500ms;
+// }
 
-.dish3 {
-    @include animation-menu;
-    animation-delay: 4000ms;
-}
+// .dish3 {
+//     @include animation-menu;
+//     animation-delay: 4000ms;
+// }
 
-.dessert,
-.dessert1 {
-    @include animation-menu;
-    animation-delay: 5500ms;
-}
+// .dessert,
+// .dessert1 {
+//     @include animation-menu;
+//     animation-delay: 5500ms;
+// }
 
-.dessert2 {
-    @include animation-menu;
-    animation-delay: 6000ms;
-}
+// .dessert2 {
+//     @include animation-menu;
+//     animation-delay: 6000ms;
+// }
 
-.dessert3 {
-    @include animation-menu;
-    animation-delay: 6500ms;
-}
-
+// .dessert3 {
+//     @include animation-menu;
+//     animation-delay: 6500ms;
+// }
 
 
 /* Apparation coche des plats */
-@keyframes animation-price {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-60px);
-    }
-}
-
 .menu {
 
     &__card:hover {
         cursor: pointer;
 
         .menu__price {
-            animation: animation-price 500ms linear both;
+            transform: translateX(-60px);
         }
 
         .menu__save {

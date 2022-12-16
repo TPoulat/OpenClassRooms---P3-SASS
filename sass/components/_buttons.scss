@@ -32,7 +32,6 @@
         border-radius: 50%;
         background-color: $color-primary;
         color: $color-text;
-
     }
 
     &__logo {
@@ -73,7 +72,6 @@
             transform: scale(1);
             transform-origin: 50% 100%;
         }
-
     }
 
     @keyframes color-like {
@@ -166,5 +164,4 @@
             left: 8.7%;
         }
     }
-
 }
