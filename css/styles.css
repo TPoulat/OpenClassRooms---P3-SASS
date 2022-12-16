@@ -109,20 +109,20 @@ footer {
 }
 @keyframes color-like {
   0% {
-    transform: scale(0%, 0%);
+    transform: scale(0, 0);
     opacity: 1;
   }
   25% {
-    transform: scale(35%, 25%);
+    transform: scale(0.35, 0.25);
   }
   50% {
-    transform: scale(55%, 45%);
+    transform: scale(0.55, 0.45);
   }
   75% {
-    transform: scale(80%, 65%);
+    transform: scale(0.8, 0.65);
   }
   100% {
-    transform: scale(100%, 100%);
+    transform: scale(1, 1);
   }
 }
 .btn__like:hover {
@@ -440,10 +440,6 @@ a {
 }
 .entree,
 .entree1 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -451,10 +447,6 @@ a {
 }
 
 .entree2 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -462,10 +454,6 @@ a {
 }
 
 .entree3 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -473,10 +461,6 @@ a {
 }
 
 .entree4 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -485,10 +469,6 @@ a {
 
 .dish,
 .dish1 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -496,10 +476,6 @@ a {
 }
 
 .dish2 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -507,10 +483,6 @@ a {
 }
 
 .dish3 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -519,10 +491,6 @@ a {
 
 .dessert,
 .dessert1 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -530,10 +498,6 @@ a {
 }
 
 .dessert2 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -541,10 +505,6 @@ a {
 }
 
 .dessert3 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -568,13 +528,13 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 250px;
+  width: 150px;
   font-size: 1.1em;
 }
 
 /* Media queries */
 /* Tablette */
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 575px) and (max-width: 849px) {
   @keyframes animation-price {
     0% {
       transform: translateX(0%);
@@ -591,13 +551,30 @@ a {
   }
 }
 /* Desktop*/
-@media all and (min-width: 992px) {
+@media all and (min-width: 850px) and (max-width: 1619px) {
   @keyframes animation-price {
     0% {
       transform: translateX(0%);
     }
     100% {
       transform: translateX(-160px);
+    }
+  }
+  .menu-heading > h1 {
+    font-size: 3.5em;
+  }
+  .menu__card:hover .menu__price {
+    animation: animation-price 500ms linear both;
+  }
+}
+/* Additionnelle*/
+@media all and (min-width: 1620px) {
+  @keyframes animation-price {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-190px);
     }
   }
   .menu-heading > h1 {

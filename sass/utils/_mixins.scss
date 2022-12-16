@@ -29,10 +29,6 @@
 }
 
 @mixin animation-menu {
-    /* Firefox */
-    -moz-animation: fadein 1s;
-    /* Safari et Chrome */
-    -webkit-animation: fadein 1s;
     animation: fadein 1s;
     opacity: 0;
     animation-fill-mode: forwards;
