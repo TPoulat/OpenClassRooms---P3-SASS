@@ -1,7 +1,3 @@
-/* $media-queries: (
-    'tablet'  : "only screen (min-width: 768px) and (max-width: 991px)",
-    'desktop' : "only screen (min-width: 991px)",
-)*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 .btn {
   cursor: pointer;
@@ -368,6 +364,7 @@ a {
 }
 .menu__price {
   margin-right: 5%;
+  transition: transform 500ms linear;
 }
 .menu__save {
   background-color: #99E2D0;
@@ -404,143 +401,12 @@ a {
 
 /*Animation Menu */
 /* Apparition Menu */
-@keyframes fadein {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.entree,
-.entree1 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 500ms;
-}
-
-.entree2 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 1000ms;
-}
-
-.entree3 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 1500ms;
-}
-
-.entree4 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 2000ms;
-}
-
-.dish,
-.dish1 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 3000ms;
-}
-
-.dish2 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 3500ms;
-}
-
-.dish3 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 4000ms;
-}
-
-.dessert,
-.dessert1 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 5500ms;
-}
-
-.dessert2 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 6000ms;
-}
-
-.dessert3 {
-  /* Firefox */
-  -moz-animation: fadein 1s;
-  /* Safari et Chrome */
-  -webkit-animation: fadein 1s;
-  animation: fadein 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 6500ms;
-}
-
 /* Apparation coche des plats */
-@keyframes animation-price {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-60px);
-  }
-}
 .menu__card:hover {
   cursor: pointer;
 }
 .menu__card:hover .menu__price {
-  animation: animation-price 500ms linear both;
+  transform: translateX(-60px);
 }
 .menu__card:hover .menu__save {
   transform: scaleX(1);
