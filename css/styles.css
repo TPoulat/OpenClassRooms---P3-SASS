@@ -353,7 +353,7 @@ a {
 .menu-heading > h1 {
   font-family: "Shrikhand", cursive;
   padding-left: 5%;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .menu-heading > .title {
   padding-left: 3%;
@@ -561,7 +561,7 @@ a {
     }
   }
   .menu-heading > h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   .menu__card:hover .menu__price {
     animation: animation-price 500ms linear both;
