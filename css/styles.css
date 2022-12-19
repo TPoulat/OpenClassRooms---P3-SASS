@@ -290,7 +290,7 @@ h2 {
   flex-direction: column;
   margin: auto;
   position: relative;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .restau-card > img {
   width: 100%;
@@ -568,6 +568,11 @@ a {
   }
 }
 /* Additionnelle*/
+@media all and (max-width: 374px) {
+  .menu-heading > h1 {
+    font-size: 0.9em;
+  }
+}
 @media all and (min-width: 1620px) {
   @keyframes animation-price {
     0% {
