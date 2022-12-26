@@ -81,13 +81,8 @@ footer {
   position: absolute;
   left: 20%;
 }
-.btn__choose:hover .btn__logo {
-  color: #9356DC;
-}
 .btn__like {
   font-size: 1.5em;
-  padding-top: 10px;
-  padding-right: 30px;
 }
 .btn__like .heart-empty {
   margin: 15px;
@@ -106,6 +101,14 @@ footer {
   z-index: -1;
   transform: scale(1);
   transform-origin: 50% 100%;
+}
+.btn__like1 {
+  position: absolute;
+  right: 0%;
+  top: 65%;
+}
+.btn__choose:hover .btn__logo {
+  color: #9356DC;
 }
 @keyframes color-like {
   0% {
@@ -176,8 +179,26 @@ footer {
 }
 /* Desktop*/
 @media all and (min-width: 992px) {
-  .btn__number {
-    left: 8.7%;
+  .btn__one {
+    left: 0.5%;
+  }
+  .btn__two {
+    left: 34%;
+  }
+  .btn__three {
+    left: 67%;
+  }
+  .btn__choose {
+    width: 30%;
+  }
+  .btn__logo1 {
+    left: 5%;
+  }
+  .btn__logo2 {
+    left: 39%;
+  }
+  .btn__logo3 {
+    left: 72%;
   }
 }
 .loader {
@@ -284,7 +305,7 @@ h2 {
   width: 100%;
 }
 
-.restau-card {
+.restau-card1 {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -551,13 +572,36 @@ a {
   }
 }
 /* Desktop*/
+@media all and (min-width: 992px) {
+  #fonc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu__card {
+    width: 30%;
+  }
+  .entree__media,
+  .dish__media,
+  .dessert__media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+/* Additionnelle*/
+@media all and (max-width: 374px) {
+  .menu-heading > h1 {
+    font-size: 0.9em;
+  }
+}
 @media all and (min-width: 850px) and (max-width: 1619px) {
   @keyframes animation-price {
     0% {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-160px);
+      transform: translateX(-60px);
     }
   }
   .menu-heading > h1 {
@@ -567,19 +611,13 @@ a {
     animation: animation-price 500ms linear both;
   }
 }
-/* Additionnelle*/
-@media all and (max-width: 374px) {
-  .menu-heading > h1 {
-    font-size: 0.9em;
-  }
-}
 @media all and (min-width: 1620px) {
   @keyframes animation-price {
     0% {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-190px);
+      transform: translateX(-80px);
     }
   }
   .menu-heading > h1 {

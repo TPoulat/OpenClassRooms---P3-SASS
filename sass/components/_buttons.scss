@@ -12,6 +12,7 @@
         @include btn-hover
     }
 
+
     &__choose {
         @include flex-center;
         width: 80%;
@@ -38,16 +39,9 @@
         left: 20%;
     }
 
-    &__choose:hover {
-        .btn__logo {
-            color: $color-primary;
-        }
-    }
 
     &__like {
         font-size: 1.5em;
-        padding-top: 10px;
-        padding-right: 30px;
 
         .heart-empty {
             margin: 15px;
@@ -67,6 +61,19 @@
             z-index: -1;
             transform: scale(1);
             transform-origin: 50% 100%;
+        }
+    }
+
+    &__like1 {
+        position: absolute;
+        right: 0%;
+        top: 65%;
+    }
+
+
+    &__choose:hover {
+        .btn__logo {
+            color: $color-primary;
         }
     }
 
@@ -152,8 +159,32 @@
 @media all and (min-width: 992px) {
     .btn {
 
-        &__number {
-            left: 8.7%;
+        &__one {
+            left: 0.5%;
+        }
+
+        &__two {
+            left: 34%;
+        }
+
+        &__three {
+            left: 67%;
+        }
+
+        &__choose {
+            width: 30%;
+        }
+
+        &__logo1 {
+            left: 5%;
+        }
+
+        &__logo2 {
+            left: 39%;
+        }
+
+        &__logo3 {
+            left: 72%
         }
     }
 }
